@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Company>ratware</Company>
+    <Authors>Tom V. (ratware)</Authors>
+    <Product>ratSIGN</Product>
+    <Description>Signs files with an encrypted private key and password, and verifies them using their signature file and a trusted public key or key ID.</Description>
+    <Copyright>Copyright © 2025 ratware</Copyright>
+    <PackageLicenseExpression>CC-BY-4.0</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/ratware-official/ratsign</RepositoryUrl>
+    <Version>1.0.9423.712</Version>
+    <FileVersion>1.0.9423.712</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="libs\ratCORE.Signing\**" />
+    <EmbeddedResource Remove="libs\ratCORE.Signing\**" />
+    <None Remove="libs\ratCORE.Signing\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="libs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="libs\ratCORE.Signing\ratCORE.Signing.csproj" />
+  </ItemGroup>
+
+</Project>
