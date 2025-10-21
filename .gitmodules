@@ -1,0 +1,4 @@
+[submodule "libs/ratCORE.Signing"]
+	path = libs/ratCORE.Signing
+	url = https://github.com/ratware-official/ratCORE.Signing.git
+	branch = main
