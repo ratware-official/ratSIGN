@@ -19,6 +19,24 @@ ensuring the authenticity and integrity of published files.
 
 ---
 
+### 🧩 Clone with Submodules
+
+This project uses [ratCORE.Signing](https://github.com/ratware-official/ratCORE.Signing) as a Git submodule.
+
+To clone this repository including all dependencies, use:
+
+```bash
+git clone --recurse-submodules https://github.com/ratware-official/ratSIGN.git
+```
+
+If you've already cloned it without submodules, run:
+
+```bash
+git submodule update --init --recursive
+```
+
+---
+
 ### ⚙️ Build & Publish
 
 Framework-dependent (requires .NET runtime to be installed):
